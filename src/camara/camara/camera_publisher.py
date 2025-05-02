@@ -1,52 +1,57 @@
-#!/usr/bin/env python3
-
 import rclpy
 from rclpy.node import Node
-# to use sensor data
-from sensor_msgs.msg import Image #https://index.ros.org/p/sensor_msgs/#jazzy-assets
+from sensor_msgs.msg import Image
+from builtin_interfaces.msg import Time
 import cv2
-# To convert ROS2 Image message and OpenCV Images
-from cv_bridge import CvBridge #https://index.ros.org/p/cv_bridge/
+import numpy as np
 
-
-class PublisherNodeClass(Node):
-
+class CameraPublisher(Node):
     def __init__(self):
-        super().__init__("camera_publisher_node")
+        super().__init__('camera_publisher_node')
 
-        self.cameraDeviceNumber=0 # select camera
-        self.camera=cv2.VideoCapture(self.cameraDeviceNumber)
+        gst_pipeline = (
+            "nvarguscamerasrc ! "
+            "video/x-raw(memory:NVMM), width=1280, height=720, format=NV12, framerate=30/1 ! "
+            "nvvidconv ! video/x-raw, format=BGRx ! "
+            "videoconvert ! video/x-raw, format=BGR ! appsink"
+        )
 
-        self.bridgeObject=CvBridge()
-        self.topicNameFrames="topic_camera_image"
-        self.queueSize = 20
-        self.publisher=self.create_publisher(msg_type=Image,
-                                             topic=self.topicNameFrames,
-                                             qos_profile=self.queueSize)
-        self.periodCommunication=0.02
-        self.timer= self.create_timer(timer_period_sec=self.periodCommunication,
-                                      callback=self.timer_callbackFunction)
+        self.cap = cv2.VideoCapture(gst_pipeline, cv2.CAP_GSTREAMER)
 
-        self.i =0
-    
-    def timer_callbackFunction(self):
-        success, frame = self.camera.read()
-        frame=cv2.resize(frame,(820,640),interpolation=cv2.INTER_CUBIC)
+        if not self.cap.isOpened():
+            self.get_logger().error("❌ No se pudo abrir la cámara CSI con GStreamer.")
+            exit()
 
-        if success==True:
-            ROS2ImageMessage=self.bridgeObject.cv2_to_imgmsg(frame)
-            self.publisher.publish(ROS2ImageMessage)
-        
-        self.get_logger().info("Publishing image number %d" % self.i)
+        self.publisher = self.create_publisher(Image, "/camera/image_raw", 10)
+        self.timer = self.create_timer(1.0 / 30, self.timer_callback)
 
-        self.i+=1
+        self.get_logger().info("📷 Nodo de cámara sin cv_bridge activo ✅")
+
+    def timer_callback(self):
+        ret, frame = self.cap.read()
+        if not ret:
+            self.get_logger().warn("⚠️ No se pudo capturar el frame.")
+            return
+
+        msg = Image()
+        msg.height, msg.width = frame.shape[:2]
+        msg.encoding = 'bgr8'
+        msg.step = msg.width * 3
+        msg.data = frame.tobytes()
+
+        now = self.get_clock().now().to_msg()
+        msg.header.stamp = now
+        msg.header.frame_id = "camera_frame"
+
+        self.publisher.publish(msg)
+        self.get_logger().info("📤 Imagen publicada")
 
 def main(args=None):
     rclpy.init(args=args)
-    publisherObject = PublisherNodeClass()
-    rclpy.spin(publisherObject)
-    publisherObject.destroy_node()
+    node = CameraPublisher()
+    rclpy.spin(node)
+    node.destroy_node()
     rclpy.shutdown()
 
-if __name__=="__main__":
+if __name__ == '__main__':
     main()

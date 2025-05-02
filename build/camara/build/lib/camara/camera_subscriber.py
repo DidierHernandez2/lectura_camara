@@ -1,37 +1,43 @@
-#!/usr/bin/env python3
-
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image
+import numpy as np
 import cv2
-from cv_bridge import CvBridge
+from rclpy.qos import QoSProfile, QoSReliabilityPolicy, QoSHistoryPolicy
 
-class SubscriberNodeClass(Node):
+class CameraSubscriber(Node):
+    def _init_(self):
+        super()._init_('camera_subscriber_node')
 
-    def __init__(self):
-        super().__init__("camera_subscriber_node")
+        qos_best_effort = QoSProfile(
+            reliability=QoSReliabilityPolicy.BEST_EFFORT,
+            history=QoSHistoryPolicy.KEEP_LAST,
+            depth=1
+        )
 
-        self.bridgeObject =CvBridge()
-        self.topicNameFrames="topic_camera_image"
-        self.queueSize= 20
-        self.subscription=self.create_subscription(msg_type=Image,
-                                                   topic=self.topicNameFrames,
-                                                   callback=self.listener_callbackFunction,
-                                                   qos_profile=self.queueSize)
-        self.subscription
+        self.subscription = self.create_subscription(
+            Image,
+            '/camera/image_raw',
+            self.listener_callback,
+            qos_best_effort
+        )
+        self.get_logger().info("📥 Suscrito a /camera/image_raw con Best Effort")
 
-    def listener_callbackFunction(self,imageMessage):
-        self.get_logger().info("image has reveiced")
-        openCVImage=self.bridgeObject.imgmsg_to_cv2(imageMessage)
-        cv2.imshow("Camera Video",openCVImage)
-        cv2.waitKey(1)
+    def listener_callback(self, msg):
+        try:
+            frame = np.frombuffer(msg.data, dtype=np.uint8).reshape((msg.height, msg.width, 3))
+            cv2.imshow("🖼️ Imagen recibida", frame)
+            cv2.waitKey(1)
+        except Exception as e:
+            self.get_logger().error(f"❌ Error al procesar imagen: {e}")
 
 def main(args=None):
     rclpy.init(args=args)
-    SubscriberNode=SubscriberNodeClass()
-    rclpy.spin(SubscriberNode)
-    SubscriberNode.destroy_node()
+    node = CameraSubscriber()
+    rclpy.spin(node)
+    node.destroy_node()
+    cv2.destroyAllWindows()
     rclpy.shutdown()
 
-if __name__ =="__main__":
+if _name_ == 'main':
     main()
