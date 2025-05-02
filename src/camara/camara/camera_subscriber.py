@@ -6,8 +6,8 @@ import cv2
 from rclpy.qos import QoSProfile, QoSReliabilityPolicy, QoSHistoryPolicy
 
 class CameraSubscriber(Node):
-    def _init_(self):
-        super()._init_('camera_subscriber_node')
+    def __init__(self):
+        super().__init__('camera_subscriber_node')
 
         qos_best_effort = QoSProfile(
             reliability=QoSReliabilityPolicy.BEST_EFFORT,
@@ -39,5 +39,5 @@ def main(args=None):
     cv2.destroyAllWindows()
     rclpy.shutdown()
 
-if _name_ == 'main':
+if __name__ == '__main__':
     main()

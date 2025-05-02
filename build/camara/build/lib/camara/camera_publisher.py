@@ -23,7 +23,7 @@ class CameraPublisher(Node):
             exit()
 
         self.publisher = self.create_publisher(Image, "/camera/image_raw", 10)
-        self.timer = self.create_timer(1.0 / 30, self.timer_callback)
+        self.timer = self.create_timer(1.0 / 60, self.timer_callback)
 
         self.get_logger().info("📷 Nodo de cámara sin cv_bridge activo ✅")
 
