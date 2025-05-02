@@ -11,7 +11,7 @@ class CameraPublisher(Node):
 
         gst_pipeline = (
             "nvarguscamerasrc ! "
-            "video/x-raw(memory:NVMM), width=1280, height=720, format=NV12, framerate=60/1 ! "
+            "video/x-raw(memory:NVMM), width=640, height=480, format=NV12, framerate=60/1 ! "
             "nvvidconv ! video/x-raw, format=BGRx ! "
             "videoconvert ! video/x-raw, format=BGR ! appsink"
         )
@@ -23,7 +23,7 @@ class CameraPublisher(Node):
             exit()
 
         self.publisher = self.create_publisher(Image, "/camera/image_raw", 10)
-        self.timer = self.create_timer(1.0 / 60, self.timer_callback)
+        self.timer = self.create_timer(1.0 / 90, self.timer_callback)
 
         self.get_logger().info("📷 Nodo de cámara sin cv_bridge activo ✅")
 
