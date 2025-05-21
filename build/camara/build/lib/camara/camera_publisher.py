@@ -1,9 +1,8 @@
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image
-from builtin_interfaces.msg import Time
+from rclpy.qos import QoSProfile, QoSReliabilityPolicy
 import cv2
-import numpy as np
 
 class CameraPublisher(Node):
     def __init__(self):
@@ -11,7 +10,7 @@ class CameraPublisher(Node):
 
         gst_pipeline = (
             "nvarguscamerasrc ! "
-            "video/x-raw(memory:NVMM), width=640, height=480, format=NV12, framerate=120/1 ! "
+            "video/x-raw(memory:NVMM), width=240, height=120, format=NV12, framerate=30/1 ! "
             "nvvidconv ! video/x-raw, format=BGRx ! "
             "videoconvert ! video/x-raw, format=BGR ! appsink"
         )
@@ -19,18 +18,20 @@ class CameraPublisher(Node):
         self.cap = cv2.VideoCapture(gst_pipeline, cv2.CAP_GSTREAMER)
 
         if not self.cap.isOpened():
-            self.get_logger().error("❌ No se pudo abrir la cámara CSI con GStreamer.")
+            self.get_logger().error("Failed to open CSI camera.")
             exit()
 
-        self.publisher = self.create_publisher(Image, "/camera/image_raw", 10)
-        self.timer = self.create_timer(1.0 / 120, self.timer_callback)
-
-        self.get_logger().info("📷 Nodo de cámara sin cv_bridge activo ✅")
+        qos_profile = QoSProfile(
+            reliability=QoSReliabilityPolicy.BEST_EFFORT,
+            depth=1
+        )
+        self.publisher = self.create_publisher(Image, "/camera/image_raw", qos_profile)
+        self.timer = self.create_timer(1.0 / 30, self.timer_callback)
 
     def timer_callback(self):
         ret, frame = self.cap.read()
         if not ret:
-            self.get_logger().warn("⚠️ No se pudo capturar el frame.")
+            self.get_logger().warn("Frame capture failed.")
             return
 
         msg = Image()
@@ -38,13 +39,10 @@ class CameraPublisher(Node):
         msg.encoding = 'bgr8'
         msg.step = msg.width * 3
         msg.data = frame.tobytes()
-
-        now = self.get_clock().now().to_msg()
-        msg.header.stamp = now
+        msg.header.stamp = self.get_clock().now().to_msg()
         msg.header.frame_id = "camera_frame"
 
         self.publisher.publish(msg)
-        self.get_logger().info("📤 Imagen publicada")
 
 def main(args=None):
     rclpy.init(args=args)

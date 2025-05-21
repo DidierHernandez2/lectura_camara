@@ -1,0 +1,132 @@
+[11.572s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[11.573s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fabcca1c0>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=4, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fabcca1c0>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fab1596d0>)
+[12.076s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[12.076s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[12.076s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[12.076s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[12.076s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[12.077s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[12.077s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/puzzlebot/Fantastic4/src/Camara'
+[12.077s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[12.078s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[12.078s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[12.078s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[12.078s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[12.078s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[12.079s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[12.079s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[12.079s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[12.124s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[12.124s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[12.124s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[12.125s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[12.125s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[12.125s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[12.125s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[12.126s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[12.126s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[12.127s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[12.127s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[12.127s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[12.127s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[12.128s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[12.128s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[12.128s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[12.128s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[12.129s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[12.129s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[12.129s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[12.129s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[12.129s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[12.129s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[12.130s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[12.130s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[12.130s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[12.130s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[12.130s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[12.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/camara) by extensions ['ignore', 'ignore_ament_install']
+[12.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/camara) by extension 'ignore'
+[12.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/camara) by extension 'ignore_ament_install'
+[12.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/camara) by extensions ['colcon_pkg']
+[12.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/camara) by extension 'colcon_pkg'
+[12.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/camara) by extensions ['colcon_meta']
+[12.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/camara) by extension 'colcon_meta'
+[12.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/camara) by extensions ['ros']
+[12.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/camara) by extension 'ros'
+[12.142s] DEBUG:colcon.colcon_core.package_identification:Package 'src/camara' with type 'ros.ament_python' and name 'camara'
+[12.142s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[12.143s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[12.143s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[12.143s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[12.143s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[13.184s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[13.184s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[13.384s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/puzzlebot/Fantastic4/src/Camara/install/camara' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[13.585s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/puzzlebot/Fantastic4/src/Camara/install
+[13.785s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/puzzlebot/Fantastic4/install
+[13.981s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/puzzlebot/ros2_ws/install
+[14.217s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/puzzlebot/Fantastic4/src/ChallengeSem3/controlador/install
+[14.416s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 5 installed packages in /home/puzzlebot/ros2_packages_ws/install
+[14.622s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 276 installed packages in /opt/ros/humble
+[14.631s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[15.410s] Level 5:colcon.colcon_core.verb:set package 'camara' build argument 'cmake_args' from command line to 'None'
+[15.411s] Level 5:colcon.colcon_core.verb:set package 'camara' build argument 'cmake_target' from command line to 'None'
+[15.411s] Level 5:colcon.colcon_core.verb:set package 'camara' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[15.411s] Level 5:colcon.colcon_core.verb:set package 'camara' build argument 'cmake_clean_cache' from command line to 'False'
+[15.411s] Level 5:colcon.colcon_core.verb:set package 'camara' build argument 'cmake_clean_first' from command line to 'False'
+[15.411s] Level 5:colcon.colcon_core.verb:set package 'camara' build argument 'cmake_force_configure' from command line to 'False'
+[15.411s] Level 5:colcon.colcon_core.verb:set package 'camara' build argument 'ament_cmake_args' from command line to 'None'
+[15.411s] Level 5:colcon.colcon_core.verb:set package 'camara' build argument 'catkin_cmake_args' from command line to 'None'
+[15.411s] Level 5:colcon.colcon_core.verb:set package 'camara' build argument 'catkin_skip_building_tests' from command line to 'False'
+[15.412s] DEBUG:colcon.colcon_core.verb:Building package 'camara' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/puzzlebot/Fantastic4/src/Camara/build/camara', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/puzzlebot/Fantastic4/src/Camara/install/camara', 'merge_install': False, 'path': '/home/puzzlebot/Fantastic4/src/Camara/src/camara', 'symlink_install': False, 'test_result_base': None}
+[15.605s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[15.800s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[15.801s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/puzzlebot/Fantastic4/src/Camara/src/camara' with build type 'ament_python'
+[15.802s] Level 1:colcon.colcon_core.shell:create_environment_hook('camara', 'ament_prefix_path')
+[16.006s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[16.007s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/puzzlebot/Fantastic4/src/Camara/install/camara/share/camara/hook/ament_prefix_path.ps1'
+[16.010s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/puzzlebot/Fantastic4/src/Camara/install/camara/share/camara/hook/ament_prefix_path.dsv'
+[16.011s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/puzzlebot/Fantastic4/src/Camara/install/camara/share/camara/hook/ament_prefix_path.sh'
+[16.216s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[16.216s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[18.769s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/puzzlebot/Fantastic4/src/Camara/src/camara'
+[18.972s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[18.973s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[22.211s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/puzzlebot/Fantastic4/src/Camara/src/camara': PYTHONPATH=/home/puzzlebot/Fantastic4/src/Camara/build/camara/prefix_override:/home/puzzlebot/Fantastic4/src/Camara/install/camara/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/camara build --build-base /home/puzzlebot/Fantastic4/src/Camara/build/camara/build install --record /home/puzzlebot/Fantastic4/src/Camara/build/camara/install.log --single-version-externally-managed
+[23.625s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/puzzlebot/Fantastic4/src/Camara/src/camara' returned '0': PYTHONPATH=/home/puzzlebot/Fantastic4/src/Camara/build/camara/prefix_override:/home/puzzlebot/Fantastic4/src/Camara/install/camara/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/camara build --build-base /home/puzzlebot/Fantastic4/src/Camara/build/camara/build install --record /home/puzzlebot/Fantastic4/src/Camara/build/camara/install.log --single-version-externally-managed
+[23.839s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Fantastic4/src/Camara/install/camara' for CMake module files
+[23.841s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Fantastic4/src/Camara/install/camara' for CMake config files
+[23.844s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Fantastic4/src/Camara/install/camara/lib'
+[23.845s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Fantastic4/src/Camara/install/camara/bin'
+[23.845s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Fantastic4/src/Camara/install/camara/lib/pkgconfig/camara.pc'
+[23.846s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Fantastic4/src/Camara/install/camara/lib/python3.8/site-packages'
+[23.846s] Level 1:colcon.colcon_core.shell:create_environment_hook('camara', 'pythonpath')
+[24.051s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/puzzlebot/Fantastic4/src/Camara/install/camara/share/camara/hook/pythonpath.ps1'
+[24.053s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/puzzlebot/Fantastic4/src/Camara/install/camara/share/camara/hook/pythonpath.dsv'
+[24.054s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/puzzlebot/Fantastic4/src/Camara/install/camara/share/camara/hook/pythonpath.sh'
+[24.055s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Fantastic4/src/Camara/install/camara/bin'
+[24.056s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(camara)
+[24.260s] INFO:colcon.colcon_core.shell:Creating package script '/home/puzzlebot/Fantastic4/src/Camara/install/camara/share/camara/package.ps1'
+[24.263s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/puzzlebot/Fantastic4/src/Camara/install/camara/share/camara/package.dsv'
+[24.265s] INFO:colcon.colcon_core.shell:Creating package script '/home/puzzlebot/Fantastic4/src/Camara/install/camara/share/camara/package.sh'
+[24.268s] INFO:colcon.colcon_core.shell:Creating package script '/home/puzzlebot/Fantastic4/src/Camara/install/camara/share/camara/package.bash'
+[24.271s] INFO:colcon.colcon_core.shell:Creating package script '/home/puzzlebot/Fantastic4/src/Camara/install/camara/share/camara/package.zsh'
+[24.273s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/puzzlebot/Fantastic4/src/Camara/install/camara/share/colcon-core/packages/camara)
+[24.274s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[24.275s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[24.275s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[24.276s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[24.496s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[24.496s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[24.496s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[24.537s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[24.761s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/puzzlebot/Fantastic4/src/Camara/install/local_setup.ps1'
+[24.765s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/puzzlebot/Fantastic4/src/Camara/install/_local_setup_util_ps1.py'
+[24.770s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/puzzlebot/Fantastic4/src/Camara/install/setup.ps1'
+[24.977s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/puzzlebot/Fantastic4/src/Camara/install/local_setup.sh'
+[24.984s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/puzzlebot/Fantastic4/src/Camara/install/_local_setup_util_sh.py'
+[24.985s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/puzzlebot/Fantastic4/src/Camara/install/setup.sh'
+[25.192s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/puzzlebot/Fantastic4/src/Camara/install/local_setup.bash'
+[25.193s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/puzzlebot/Fantastic4/src/Camara/install/setup.bash'
+[25.444s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/puzzlebot/Fantastic4/src/Camara/install/local_setup.zsh'
+[25.446s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/puzzlebot/Fantastic4/src/Camara/install/setup.zsh'

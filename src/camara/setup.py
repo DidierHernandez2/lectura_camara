@@ -24,7 +24,9 @@ setup(
             'simple_subscriber = camara.simple_subscriber:main',
 
             'camera_publisher = camara.camera_publisher:main',
-            'camera_subscriber = camara.camera_subscriber:main'
+            'camera_subscriber = camara.camera_subscriber:main',
+	    'color_detector      = camara.camera_color_detector:main',
+	    'traffic_light       = camara.traffic_light:main',
         ],
     },
 )

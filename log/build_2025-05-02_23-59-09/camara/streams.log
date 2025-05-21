@@ -1,0 +1,34 @@
+[4.689s] Invoking command in '/home/puzzlebot/ros2_ws/src/Fantastic4/Camara/src/camara': PYTHONPATH=/home/puzzlebot/ros2_ws/src/Fantastic4/Camara/build/camara/prefix_override:/home/puzzlebot/ros2_ws/src/Fantastic4/Camara/install/camara/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/camara build --build-base /home/puzzlebot/ros2_ws/src/Fantastic4/Camara/build/camara/build install --record /home/puzzlebot/ros2_ws/src/Fantastic4/Camara/build/camara/install.log --single-version-externally-managed
+[5.705s] running egg_info
+[5.707s] writing ../../build/camara/camara.egg-info/PKG-INFO
+[5.708s] writing dependency_links to ../../build/camara/camara.egg-info/dependency_links.txt
+[5.708s] writing entry points to ../../build/camara/camara.egg-info/entry_points.txt
+[5.709s] writing requirements to ../../build/camara/camara.egg-info/requires.txt
+[5.709s] writing top-level names to ../../build/camara/camara.egg-info/top_level.txt
+[5.861s] reading manifest file '../../build/camara/camara.egg-info/SOURCES.txt'
+[5.867s] writing manifest file '../../build/camara/camara.egg-info/SOURCES.txt'
+[5.867s] running build
+[5.868s] running build_py
+[5.869s] copying camara/camera_subscriber.py -> /home/puzzlebot/ros2_ws/src/Fantastic4/Camara/build/camara/build/lib/camara
+[5.869s] copying camara/camera_color_detector.py -> /home/puzzlebot/ros2_ws/src/Fantastic4/Camara/build/camara/build/lib/camara
+[5.870s] copying camara/camera_publisher.py -> /home/puzzlebot/ros2_ws/src/Fantastic4/Camara/build/camara/build/lib/camara
+[5.870s] running install
+[5.873s] running install_lib
+[5.878s] copying /home/puzzlebot/ros2_ws/src/Fantastic4/Camara/build/camara/build/lib/camara/camera_subscriber.py -> /home/puzzlebot/ros2_ws/src/Fantastic4/Camara/install/camara/lib/python3.8/site-packages/camara
+[5.879s] copying /home/puzzlebot/ros2_ws/src/Fantastic4/Camara/build/camara/build/lib/camara/camera_color_detector.py -> /home/puzzlebot/ros2_ws/src/Fantastic4/Camara/install/camara/lib/python3.8/site-packages/camara
+[5.879s] copying /home/puzzlebot/ros2_ws/src/Fantastic4/Camara/build/camara/build/lib/camara/camera_publisher.py -> /home/puzzlebot/ros2_ws/src/Fantastic4/Camara/install/camara/lib/python3.8/site-packages/camara
+[5.882s] byte-compiling /home/puzzlebot/ros2_ws/src/Fantastic4/Camara/install/camara/lib/python3.8/site-packages/camara/camera_subscriber.py to camera_subscriber.cpython-38.pyc
+[5.888s] byte-compiling /home/puzzlebot/ros2_ws/src/Fantastic4/Camara/install/camara/lib/python3.8/site-packages/camara/camera_color_detector.py to camera_color_detector.cpython-38.pyc
+[5.891s] byte-compiling /home/puzzlebot/ros2_ws/src/Fantastic4/Camara/install/camara/lib/python3.8/site-packages/camara/camera_publisher.py to camera_publisher.cpython-38.pyc
+[5.893s] running install_data
+[5.895s] running install_egg_info
+[5.903s] removing '/home/puzzlebot/ros2_ws/src/Fantastic4/Camara/install/camara/lib/python3.8/site-packages/camara-0.0.0-py3.8.egg-info' (and everything under it)
+[5.904s] Copying ../../build/camara/camara.egg-info to /home/puzzlebot/ros2_ws/src/Fantastic4/Camara/install/camara/lib/python3.8/site-packages/camara-0.0.0-py3.8.egg-info
+[5.908s] running install_scripts
+[5.972s] Installing camera_publisher script to /home/puzzlebot/ros2_ws/src/Fantastic4/Camara/install/camara/lib/camara
+[5.973s] Installing camera_subscriber script to /home/puzzlebot/ros2_ws/src/Fantastic4/Camara/install/camara/lib/camara
+[5.973s] Installing color_detector script to /home/puzzlebot/ros2_ws/src/Fantastic4/Camara/install/camara/lib/camara
+[5.974s] Installing simple_publisher script to /home/puzzlebot/ros2_ws/src/Fantastic4/Camara/install/camara/lib/camara
+[5.974s] Installing simple_subscriber script to /home/puzzlebot/ros2_ws/src/Fantastic4/Camara/install/camara/lib/camara
+[5.975s] writing list of installed files to '/home/puzzlebot/ros2_ws/src/Fantastic4/Camara/build/camara/install.log'
+[6.067s] Invoked command in '/home/puzzlebot/ros2_ws/src/Fantastic4/Camara/src/camara' returned '0': PYTHONPATH=/home/puzzlebot/ros2_ws/src/Fantastic4/Camara/build/camara/prefix_override:/home/puzzlebot/ros2_ws/src/Fantastic4/Camara/install/camara/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/camara build --build-base /home/puzzlebot/ros2_ws/src/Fantastic4/Camara/build/camara/build install --record /home/puzzlebot/ros2_ws/src/Fantastic4/Camara/build/camara/install.log --single-version-externally-managed

@@ -1,0 +1,32 @@
+running egg_info
+writing ../../build/camara/camara.egg-info/PKG-INFO
+writing dependency_links to ../../build/camara/camara.egg-info/dependency_links.txt
+writing entry points to ../../build/camara/camara.egg-info/entry_points.txt
+writing requirements to ../../build/camara/camara.egg-info/requires.txt
+writing top-level names to ../../build/camara/camara.egg-info/top_level.txt
+reading manifest file '../../build/camara/camara.egg-info/SOURCES.txt'
+writing manifest file '../../build/camara/camara.egg-info/SOURCES.txt'
+running build
+running build_py
+copying camara/camera_subscriber.py -> /home/puzzlebot/ros2_ws/src/Fantastic4/Camara/build/camara/build/lib/camara
+copying camara/camera_color_detector.py -> /home/puzzlebot/ros2_ws/src/Fantastic4/Camara/build/camara/build/lib/camara
+copying camara/camera_publisher.py -> /home/puzzlebot/ros2_ws/src/Fantastic4/Camara/build/camara/build/lib/camara
+running install
+running install_lib
+copying /home/puzzlebot/ros2_ws/src/Fantastic4/Camara/build/camara/build/lib/camara/camera_subscriber.py -> /home/puzzlebot/ros2_ws/src/Fantastic4/Camara/install/camara/lib/python3.8/site-packages/camara
+copying /home/puzzlebot/ros2_ws/src/Fantastic4/Camara/build/camara/build/lib/camara/camera_color_detector.py -> /home/puzzlebot/ros2_ws/src/Fantastic4/Camara/install/camara/lib/python3.8/site-packages/camara
+copying /home/puzzlebot/ros2_ws/src/Fantastic4/Camara/build/camara/build/lib/camara/camera_publisher.py -> /home/puzzlebot/ros2_ws/src/Fantastic4/Camara/install/camara/lib/python3.8/site-packages/camara
+byte-compiling /home/puzzlebot/ros2_ws/src/Fantastic4/Camara/install/camara/lib/python3.8/site-packages/camara/camera_subscriber.py to camera_subscriber.cpython-38.pyc
+byte-compiling /home/puzzlebot/ros2_ws/src/Fantastic4/Camara/install/camara/lib/python3.8/site-packages/camara/camera_color_detector.py to camera_color_detector.cpython-38.pyc
+byte-compiling /home/puzzlebot/ros2_ws/src/Fantastic4/Camara/install/camara/lib/python3.8/site-packages/camara/camera_publisher.py to camera_publisher.cpython-38.pyc
+running install_data
+running install_egg_info
+removing '/home/puzzlebot/ros2_ws/src/Fantastic4/Camara/install/camara/lib/python3.8/site-packages/camara-0.0.0-py3.8.egg-info' (and everything under it)
+Copying ../../build/camara/camara.egg-info to /home/puzzlebot/ros2_ws/src/Fantastic4/Camara/install/camara/lib/python3.8/site-packages/camara-0.0.0-py3.8.egg-info
+running install_scripts
+Installing camera_publisher script to /home/puzzlebot/ros2_ws/src/Fantastic4/Camara/install/camara/lib/camara
+Installing camera_subscriber script to /home/puzzlebot/ros2_ws/src/Fantastic4/Camara/install/camara/lib/camara
+Installing color_detector script to /home/puzzlebot/ros2_ws/src/Fantastic4/Camara/install/camara/lib/camara
+Installing simple_publisher script to /home/puzzlebot/ros2_ws/src/Fantastic4/Camara/install/camara/lib/camara
+Installing simple_subscriber script to /home/puzzlebot/ros2_ws/src/Fantastic4/Camara/install/camara/lib/camara
+writing list of installed files to '/home/puzzlebot/ros2_ws/src/Fantastic4/Camara/build/camara/install.log'

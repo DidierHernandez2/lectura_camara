@@ -1,0 +1,115 @@
+[0.000000] (-) TimerEvent: {}
+[0.000396] (camara) JobQueued: {'identifier': 'camara', 'dependencies': OrderedDict()}
+[0.000536] (camara) JobStarted: {'identifier': 'camara'}
+[0.097720] (-) TimerEvent: {}
+[0.199846] (-) TimerEvent: {}
+[0.300823] (-) TimerEvent: {}
+[0.402591] (-) TimerEvent: {}
+[0.525433] (-) TimerEvent: {}
+[0.632392] (-) TimerEvent: {}
+[0.735294] (-) TimerEvent: {}
+[0.839843] (-) TimerEvent: {}
+[0.940890] (-) TimerEvent: {}
+[1.043680] (-) TimerEvent: {}
+[1.149690] (-) TimerEvent: {}
+[1.254878] (-) TimerEvent: {}
+[1.358121] (-) TimerEvent: {}
+[1.459180] (-) TimerEvent: {}
+[1.563058] (-) TimerEvent: {}
+[1.665159] (-) TimerEvent: {}
+[1.770049] (-) TimerEvent: {}
+[1.874604] (-) TimerEvent: {}
+[1.975328] (-) TimerEvent: {}
+[2.076257] (-) TimerEvent: {}
+[2.176867] (-) TimerEvent: {}
+[2.277481] (-) TimerEvent: {}
+[2.378076] (-) TimerEvent: {}
+[2.478679] (-) TimerEvent: {}
+[2.579278] (-) TimerEvent: {}
+[2.679925] (-) TimerEvent: {}
+[2.780501] (-) TimerEvent: {}
+[2.881113] (-) TimerEvent: {}
+[2.981771] (-) TimerEvent: {}
+[3.082742] (-) TimerEvent: {}
+[3.184760] (-) TimerEvent: {}
+[3.286225] (-) TimerEvent: {}
+[3.392535] (-) TimerEvent: {}
+[3.494422] (-) TimerEvent: {}
+[3.597643] (-) TimerEvent: {}
+[3.700653] (-) TimerEvent: {}
+[3.802402] (-) TimerEvent: {}
+[3.907633] (-) TimerEvent: {}
+[4.008769] (-) TimerEvent: {}
+[4.110830] (-) TimerEvent: {}
+[4.212900] (-) TimerEvent: {}
+[4.315492] (-) TimerEvent: {}
+[4.417872] (-) TimerEvent: {}
+[4.520493] (-) TimerEvent: {}
+[4.621807] (-) TimerEvent: {}
+[4.723656] (-) TimerEvent: {}
+[4.824479] (-) TimerEvent: {}
+[4.925091] (-) TimerEvent: {}
+[5.025702] (-) TimerEvent: {}
+[5.126315] (-) TimerEvent: {}
+[5.226925] (-) TimerEvent: {}
+[5.327565] (-) TimerEvent: {}
+[5.428167] (-) TimerEvent: {}
+[5.528755] (-) TimerEvent: {}
+[5.629360] (-) TimerEvent: {}
+[5.729997] (-) TimerEvent: {}
+[5.830657] (-) TimerEvent: {}
+[5.931293] (-) TimerEvent: {}
+[6.032003] (-) TimerEvent: {}
+[6.132595] (-) TimerEvent: {}
+[6.233209] (-) TimerEvent: {}
+[6.333938] (-) TimerEvent: {}
+[6.434665] (-) TimerEvent: {}
+[6.457868] (camara) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/camara', 'build', '--build-base', '/home/puzzlebot/Fantastic4/src/Camara/build/camara/build', 'install', '--record', '/home/puzzlebot/Fantastic4/src/Camara/build/camara/install.log', '--single-version-externally-managed'], 'cwd': '/home/puzzlebot/Fantastic4/src/Camara/src/camara', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_GB:en', 'USER': 'puzzlebot', 'SSH_CLIENT': '10.42.0.120 56780 22', 'LC_TIME': 'es_MX.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/puzzlebot/ros2_packages_ws/install/micro_ros_agent/lib:/home/puzzlebot/ros2_packages_ws/install/micro_ros_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/puzzlebot', 'OLDPWD': '/home/puzzlebot/Fantastic4/src/Camara/src', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'es_MX.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/puzzlebot/Fantastic4/install:/home/puzzlebot/Fantastic4/src/Camara/install:/home/puzzlebot/ros2_ws/install:/home/puzzlebot/Fantastic4/src/ChallengeSem3/controlador/install:/home/puzzlebot/ros2_packages_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'puzzlebot', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '6', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/puzzlebot/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'es_MX.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_GB.UTF-8', 'LC_TELEPHONE': 'es_MX.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/puzzlebot/Fantastic4/install/odometry_pkg:/home/puzzlebot/Fantastic4/install/joystick:/home/puzzlebot/Fantastic4/install/controlador:/home/puzzlebot/Fantastic4/install/camara:/home/puzzlebot/Fantastic4/src/Camara/install/camara:/home/puzzlebot/Fantastic4/src/ChallengeSem3/controlador/install/controlador:/home/puzzlebot/ros2_packages_ws/install/ros_deep_learning:/home/puzzlebot/ros2_packages_ws/install/micro_ros_setup:/home/puzzlebot/ros2_packages_ws/install/micro_ros_agent:/home/puzzlebot/ros2_packages_ws/install/micro_ros_msgs:/home/puzzlebot/ros2_packages_ws/install/camera_info_publisher:/home/puzzlebot/ros2_ws/install/puzzlebot_ros:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'es_MX.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'es_MX.UTF-8', 'LC_IDENTIFICATION': 'es_MX.UTF-8', 'PWD': '/home/puzzlebot/Fantastic4/src/Camara/build/camara', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '10.42.0.120 56780 10.42.0.1 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/puzzlebot/Fantastic4/src/Camara/build/camara/prefix_override:/home/puzzlebot/Fantastic4/src/Camara/install/camara/lib/python3.8/site-packages:/home/puzzlebot/Fantastic4/install/odometry_pkg/lib/python3.8/site-packages:/home/puzzlebot/Fantastic4/install/joystick/lib/python3.8/site-packages:/home/puzzlebot/Fantastic4/install/controlador/lib/python3.8/site-packages:/home/puzzlebot/Fantastic4/install/camara/lib/python3.8/site-packages:/home/puzzlebot/Fantastic4/src/Camara/install/camara/lib/python3.8/site-packages:/home/puzzlebot/Fantastic4/src/ChallengeSem3/controlador/install/controlador/lib/python3.8/site-packages:/home/puzzlebot/ros2_packages_ws/install/micro_ros_msgs/lib/python3.8/site-packages:/home/puzzlebot/ros2_ws/build/puzzlebot_ros:/home/puzzlebot/ros2_ws/install/puzzlebot_ros/lib/python3.8/site-packages:/opt/ros/humble/lib/python3.8/site-packages', 'LC_NUMERIC': 'es_MX.UTF-8', 'LC_PAPER': 'es_MX.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/puzzlebot/ros2_packages_ws/install/ros_deep_learning:/home/puzzlebot/ros2_packages_ws/install/micro_ros_setup:/home/puzzlebot/ros2_packages_ws/install/micro_ros_agent:/home/puzzlebot/ros2_packages_ws/install/micro_ros_msgs:/home/puzzlebot/ros2_packages_ws/install/camera_info_publisher'}, 'shell': False}
+[6.534958] (-) TimerEvent: {}
+[6.635820] (-) TimerEvent: {}
+[6.736452] (-) TimerEvent: {}
+[6.837149] (-) TimerEvent: {}
+[6.937798] (-) TimerEvent: {}
+[7.038403] (-) TimerEvent: {}
+[7.138998] (-) TimerEvent: {}
+[7.239629] (-) TimerEvent: {}
+[7.340210] (-) TimerEvent: {}
+[7.440814] (-) TimerEvent: {}
+[7.515331] (camara) StdoutLine: {'line': b'running egg_info\n'}
+[7.517818] (camara) StdoutLine: {'line': b'writing ../../build/camara/camara.egg-info/PKG-INFO\n'}
+[7.518547] (camara) StdoutLine: {'line': b'writing dependency_links to ../../build/camara/camara.egg-info/dependency_links.txt\n'}
+[7.519147] (camara) StdoutLine: {'line': b'writing entry points to ../../build/camara/camara.egg-info/entry_points.txt\n'}
+[7.519821] (camara) StdoutLine: {'line': b'writing requirements to ../../build/camara/camara.egg-info/requires.txt\n'}
+[7.520214] (camara) StdoutLine: {'line': b'writing top-level names to ../../build/camara/camara.egg-info/top_level.txt\n'}
+[7.540950] (-) TimerEvent: {}
+[7.641509] (-) TimerEvent: {}
+[7.673350] (camara) StdoutLine: {'line': b"reading manifest file '../../build/camara/camara.egg-info/SOURCES.txt'\n"}
+[7.677190] (camara) StdoutLine: {'line': b"writing manifest file '../../build/camara/camara.egg-info/SOURCES.txt'\n"}
+[7.678592] (camara) StdoutLine: {'line': b'running build\n'}
+[7.679038] (camara) StdoutLine: {'line': b'running build_py\n'}
+[7.679382] (camara) StdoutLine: {'line': b'copying camara/camera_subscriber.py -> /home/puzzlebot/Fantastic4/src/Camara/build/camara/build/lib/camara\n'}
+[7.680062] (camara) StdoutLine: {'line': b'running install\n'}
+[7.683288] (camara) StdoutLine: {'line': b'running install_lib\n'}
+[7.687302] (camara) StdoutLine: {'line': b'copying /home/puzzlebot/Fantastic4/src/Camara/build/camara/build/lib/camara/camera_subscriber.py -> /home/puzzlebot/Fantastic4/src/Camara/install/camara/lib/python3.8/site-packages/camara\n'}
+[7.690118] (camara) StdoutLine: {'line': b'byte-compiling /home/puzzlebot/Fantastic4/src/Camara/install/camara/lib/python3.8/site-packages/camara/camera_subscriber.py to camera_subscriber.cpython-38.pyc\n'}
+[7.696387] (camara) StdoutLine: {'line': b'running install_data\n'}
+[7.698794] (camara) StdoutLine: {'line': b'running install_egg_info\n'}
+[7.706434] (camara) StdoutLine: {'line': b"removing '/home/puzzlebot/Fantastic4/src/Camara/install/camara/lib/python3.8/site-packages/camara-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[7.707456] (camara) StdoutLine: {'line': b'Copying ../../build/camara/camara.egg-info to /home/puzzlebot/Fantastic4/src/Camara/install/camara/lib/python3.8/site-packages/camara-0.0.0-py3.8.egg-info\n'}
+[7.710722] (camara) StdoutLine: {'line': b'running install_scripts\n'}
+[7.741710] (-) TimerEvent: {}
+[7.776497] (camara) StdoutLine: {'line': b'Installing camera_publisher script to /home/puzzlebot/Fantastic4/src/Camara/install/camara/lib/camara\n'}
+[7.777402] (camara) StdoutLine: {'line': b'Installing camera_subscriber script to /home/puzzlebot/Fantastic4/src/Camara/install/camara/lib/camara\n'}
+[7.777877] (camara) StdoutLine: {'line': b'Installing simple_publisher script to /home/puzzlebot/Fantastic4/src/Camara/install/camara/lib/camara\n'}
+[7.778393] (camara) StdoutLine: {'line': b'Installing simple_subscriber script to /home/puzzlebot/Fantastic4/src/Camara/install/camara/lib/camara\n'}
+[7.779122] (camara) StdoutLine: {'line': b"writing list of installed files to '/home/puzzlebot/Fantastic4/src/Camara/build/camara/install.log'\n"}
+[7.841966] (-) TimerEvent: {}
+[7.871909] (camara) CommandEnded: {'returncode': 0}
+[7.942579] (-) TimerEvent: {}
+[8.047975] (-) TimerEvent: {}
+[8.149791] (-) TimerEvent: {}
+[8.251062] (-) TimerEvent: {}
+[8.353801] (-) TimerEvent: {}
+[8.459101] (-) TimerEvent: {}
+[8.531646] (camara) JobEnded: {'identifier': 'camara', 'rc': 0}
+[8.533801] (-) EventReactorShutdown: {}
